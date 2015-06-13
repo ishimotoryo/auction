@@ -6,7 +6,7 @@ class CreateItems < ActiveRecord::Migration
       t.integer :price
       t.integer :seller_id
       t.string :email
-      t.string :image_ur
+      t.string :image_url
 
       t.timestamps null: false
     end
