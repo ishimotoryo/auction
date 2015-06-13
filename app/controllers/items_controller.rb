@@ -19,7 +19,19 @@ class ItemsController < ApplicationController
       redirect_to"/items/#{@item.id}"
 
   end
+  def edit
+    #http://localhost:3000/items/5/edit
+    #上のurlを取得して@item = Item.find(5)
 
+    @item = Item.find(params[:id])
+  end
+  def update
+    @item = Item.find(params[:id])
+    @item.update_attributes(item_params)
+
+    redirect_to "/items/#{@item.id}"
+
+  end
   private
 
 

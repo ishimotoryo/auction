@@ -15,6 +15,8 @@ get 'items/new' => 'items#new'
 get 'items/:id' => 'items#show'
 get 'items/' => 'items#index'
 post 'items' => 'items#create'
+get 'items/:id/edit' => 'items#edit'
+patch 'items/:id' => 'items#update'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 

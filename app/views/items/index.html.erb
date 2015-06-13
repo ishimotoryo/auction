@@ -3,6 +3,8 @@
   <% @items.each do |item| %>
     <li>
       <a href="/items/<%= item.id %>"><%= item.name %></a>
-    </li>
+
+      <a href="/items/<%= item.id %>/edit">編集</a>
+      </li>
   <% end -%>
 </ul>
